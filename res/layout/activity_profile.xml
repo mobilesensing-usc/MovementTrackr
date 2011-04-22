@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="5sp"
+>
+	<Spinner
+		android:id="@+id/spinner_profile_select_profile"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" />
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="5sp"
+		android:layout_below="@id/spinner_profile_select_profile"
+		android:layout_above="@+id/linearlayout_profile_buttons"
+	>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+		>
+			<RelativeLayout
+				android:id="@+id/relativelayout_profile_edit_avatar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_margin="5sp"
+				android:layout_centerHorizontal="true"
+			>
+				<ImageView
+					android:id="@+id/imageview_profile_edit_avatar"
+					android:layout_width="130sp"
+					android:layout_height="120sp"
+					android:scaleType="fitXY"
+					android:layout_alignParentLeft="true"
+					android:background="@drawable/userdetails_avatarplaceholder"/>
+				<LinearLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:id="@+id/linearlayout_profile_edit_avatar"
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="5sp"
+					android:layout_alignParentRight="true"
+					android:gravity="center_vertical"
+					android:layout_alignTop="@id/imageview_profile_edit_avatar"
+					android:layout_alignBottom="@id/imageview_profile_edit_avatar"
+					android:layout_toRightOf="@id/imageview_profile_edit_avatar"
+				>
+					<Button
+						android:id="@+id/button_profile_edit_click_new"
+						android:layout_width="fill_parent"
+						android:layout_height="40sp"
+						android:layout_marginTop="3sp"
+						android:text="Click New..."/>
+					<Button
+						android:id="@+id/button_profile_edit_use_existing"
+						android:layout_width="fill_parent"
+						android:layout_height="40sp"
+						android:text="Use Existing..."/>
+					<Button
+						android:id="@+id/button_profile_edit_cancel"
+						android:layout_width="fill_parent"
+						android:layout_height="45sp"
+						android:text="Revert To Default..."
+						android:textColor="@android:color/white"
+						android:background="@drawable/button_delete" />
+				</LinearLayout>
+			</RelativeLayout>
+			<TableLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:stretchColumns="1"
+			>
+				<TableRow>
+					<TextView
+						android:layout_width="110sp"
+						android:layout_height="wrap_content"
+						android:text="First Name : "
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+					<EditText
+						android:id="@+id/edittext_profile_first_name"
+						android:layout_width="150sp"
+						android:layout_height="wrap_content"
+						android:singleLine="true"
+						android:textSize="16sp"
+						android:hint="Enter First Name..."
+						android:background="@android:color/transparent"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						android:layout_width="110sp"
+						android:layout_height="wrap_content"
+						android:text="Last Name : "
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+					<EditText
+						android:id="@+id/edittext_profile_last_name"
+						android:layout_width="150sp"
+						android:layout_height="wrap_content"
+						android:hint="Enter Last Name..."
+						android:textSize="16sp"
+						android:singleLine="true"
+						android:background="@android:color/transparent"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						android:layout_width="110sp"
+						android:layout_height="wrap_content"
+						android:text="Age : "
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+					<TextView
+						android:id="@+id/textview_profile_age"
+						android:layout_width="150sp"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:textColor="@android:color/white"
+						android:clickable="true"
+						android:padding="10sp" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						android:layout_width="110sp"
+						android:layout_height="wrap_content"
+						android:text="Height : "
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+					<TextView
+						android:id="@+id/textview_profile_height"
+						android:layout_width="150sp"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:textColor="@android:color/white"
+						android:clickable="true"
+						android:padding="10sp" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						android:layout_width="110sp"
+						android:layout_height="wrap_content"
+						android:text="Weight : "
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+					<TextView
+						android:id="@+id/textview_profile_weight"
+						android:layout_width="150sp"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:singleLine="true"
+						android:background="@android:color/transparent"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						android:layout_width="110sp"
+						android:layout_height="wrap_content"
+						android:text="Gender : "
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+					<TextView
+						android:id="@+id/textview_profile_gender"
+						android:layout_width="150sp"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:background="@android:color/transparent"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						android:layout_width="130sp"
+						android:layout_height="wrap_content"
+						android:text="Leg Length : "
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+					<TextView
+						android:id="@+id/textview_profile_leg_length"
+						android:layout_width="150sp"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:background="@android:color/transparent"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						android:layout_width="110sp"
+						android:layout_height="wrap_content"
+						android:text="Race : "
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+					<TextView
+						android:id="@+id/textview_profile_race"
+						android:layout_width="150sp"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:background="@android:color/transparent"
+						android:textColor="@android:color/white"
+						android:padding="10sp" />
+				</TableRow>
+			</TableLayout>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout
+		android:id="@id/linearlayout_profile_buttons"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal"
+	>
+		<Button
+			android:id="@+id/button_profile_save_changes"
+			android:layout_width="fill_parent"
+			android:layout_height="48sp"
+			android:text="Save Changes"
+			android:textSize="15sp"
+			android:textStyle="bold"
+			android:layout_weight="1" />
+		<Button
+			android:id="@+id/button_profile_delete"
+			android:layout_width="fill_parent"
+			android:layout_height="52sp"
+			android:textColor="@android:color/white"
+			android:textStyle="bold"
+			android:background="@drawable/button_delete"
+			android:textSize="15sp"
+			android:text="Delete Profile"
+			android:layout_weight="1" />
+	</LinearLayout>
+</RelativeLayout>

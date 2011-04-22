@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	<ListPreference
+		android:key="key_sensor_type"
+		android:title="Sensor Type"
+		android:entryValues="@array/array_sensor_type"
+		android:entries="@array/array_sensor_type" />
+	<ListPreference
+		android:key="key_rate_gyroscope"
+		android:title="Rate for Gyroscope"
+		android:entryValues="@array/array_rate"
+		android:entries="@array/array_rate" />
+	<ListPreference
+		android:key="key_rate_accelerometer"
+		android:title="Rate for Accelerometer"
+		android:entryValues="@array/array_rate"
+		android:entries="@array/array_rate" />
+	<CheckBoxPreference
+		android:key="key_rotated_gyroscope"
+		android:title="Rotated Gyroscope Values" />
+	<CheckBoxPreference
+		android:key="key_rotated_accelerometer"
+		android:title="Rotated Accelerometer Values" />
+	<CheckBoxPreference
+		android:key="key_location"
+		android:title="Enable GPS"
+		android:summary="Log GPS coordinates." />
+	<Preference
+		android:key="key_add_activity"
+		android:title="Add / Delete Activity" />
+	<Preference
+		android:key="key_master_reset"
+		android:title="Master Reset" />
+</PreferenceScreen>

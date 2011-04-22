@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearlayout_dialog_root"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10dp"
+>
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10sp"
+		android:text="Please enter new profile name. This name cannot be changed later." />
+	<EditText
+		android:id="@+id/edittext_dialog_profile_name"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:hint="Profile Name..." />
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+>
+		<Button
+			android:id="@+id/button_dialog_ok"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="OK"
+			android:layout_weight="1" />
+		<Button
+			android:id="@+id/button_dialog_cancel"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Cancel"
+			android:layout_weight="1" />
+	</LinearLayout>
+</LinearLayout>

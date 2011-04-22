@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+>
+	<TableLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	>
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textSize="15sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="Hours" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textSize="15sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="Minutes" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textSize="15sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="Seconds" />
+		</TableRow>
+		<TableRow>
+			<com.resl.sensors.NumberPicker
+				android:id="@+id/numberpicker_dialog_hours"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<com.resl.sensors.NumberPicker
+				android:id="@+id/numberpicker_dialog_minutes"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<com.resl.sensors.NumberPicker
+				android:id="@+id/numberpicker_dialog_seconds"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</TableRow>
+	</TableLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	>
+		<Button
+			android:id="@+id/button_dialog_enable"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Enable" />
+		<Button
+			android:id="@+id/button_dialog_disable"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Disable" />
+	</LinearLayout>
+</LinearLayout>

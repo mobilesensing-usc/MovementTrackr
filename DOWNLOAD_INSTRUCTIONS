@@ -1,0 +1,12 @@
+To download, use one of the following steps
+
+1) 	Go to https://github.com/mobilesensing-usc/MovementTrackr
+2)	Click on Download button. 
+3) 	Save as .tar.gz or .zip file
+4)	Make sure to download master branch as this is the most stable branch
+	
+OR
+	
+1) 	Install git from: http://git-scm.com/
+2) 	Open git bash and use the command: git clone git@github.com:mobilesensing-usc/MovementTrackr.git
+3) 	Press enter. The source will be downloaded to your system.

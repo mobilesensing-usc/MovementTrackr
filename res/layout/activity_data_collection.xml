@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="5sp">
+	<TextView
+		android:id="@+id/textview_data_collection_timer"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="5sp"
+		android:text="0:00:00"
+		android:textColor="@android:color/white"
+		android:textSize="30sp"
+		android:layout_alignParentLeft="true" />
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="5sp"
+		android:layout_marginRight="10sp"
+		android:layout_alignParentRight="true">
+		<ImageView
+			android:id="@+id/imageview_data_collection_timer_indicator"
+			android:layout_width="35sp"
+			android:layout_height="35sp"
+			android:scaleType="fitXY"
+			android:layout_marginRight="15sp"
+			android:src="@drawable/timer" />
+		<ImageView
+			android:id="@+id/imageview_data_collection_timer_checkbox"
+			android:layout_width="36sp"
+			android:layout_height="36sp"
+			android:padding="2sp"
+			android:scaleType="fitXY"
+			android:src="@drawable/checkbox_on" />
+
+	</LinearLayout>
+	<TextView
+		android:id="@+id/textview_data_collection_profilename"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/textview_data_collection_timer"
+		android:layout_marginLeft="5sp"
+		android:textColor="@android:color/white"
+		android:text="UserName"
+		android:textSize="20sp"
+		android:layout_alignParentLeft="true" />
+	<TextView
+		android:id="@+id/textview_data_collection_firstname"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/textview_data_collection_profilename"
+		android:layout_marginLeft="5sp"
+		android:textColor="@android:color/white"
+		android:text="FirstName"
+		android:textSize="20sp"
+		android:layout_alignParentLeft="true" />
+	<TextView
+		android:id="@+id/textview_data_collection_lastname"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/textview_data_collection_firstname"
+		android:layout_marginLeft="5sp"
+		android:textSize="20sp"
+		android:textColor="@android:color/white"
+		android:text="LastName"
+		android:layout_alignParentLeft="true" />
+	<ImageButton
+		android:id="@+id/imagebutton_data_collection_sound"
+		android:layout_width="40sp"
+		android:layout_height="40sp"
+		android:layout_below="@id/textview_data_collection_lastname"
+		android:layout_marginLeft="5sp"
+		android:layout_marginRight="10sp"
+		android:scaleType="fitXY"
+		android:background="@drawable/sound_on"
+		android:layout_alignParentLeft="true" />
+	<ImageButton
+		android:id="@+id/imagebutton_data_collection_vibration"
+		android:layout_width="70sp"
+		android:layout_height="40sp"
+		android:layout_below="@id/textview_data_collection_lastname"
+		android:layout_marginLeft="5sp"
+		android:layout_marginRight="10sp"
+		android:scaleType="fitXY"
+		android:layout_toRightOf="@id/imagebutton_data_collection_sound"
+		android:background="@drawable/vibration_on" />
+	<ImageView
+		android:id="@+id/imageview_data_collection_user_picture"
+		android:layout_width="160sp"
+		android:layout_height="130sp"
+		android:scaleType="fitXY"
+		android:layout_below="@id/textview_data_collection_timer"
+		android:background="@drawable/userdetails_avatarplaceholder"
+		android:layout_alignParentRight="true" />
+	<TextView
+		android:id="@+id/textview_data_collection_activity"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/imageview_data_collection_user_picture"
+		android:text="Activity : "
+		android:textColor="@android:color/white"
+		android:layout_marginTop="5sp"
+		android:textSize="20sp"
+		android:layout_alignParentLeft="true" />
+	<Spinner
+		android:id="@+id/spinner_data_collection_activity"
+		android:layout_width="fill_parent"
+		android:layout_height="55sp"
+		android:layout_toRightOf="@id/textview_data_collection_activity"
+		android:layout_below="@id/imageview_data_collection_user_picture"
+		android:background="@drawable/btn_dropdown"
+		android:layout_alignParentRight="true" />
+	<TextView
+		android:id="@+id/textview_data_collection_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/spinner_data_collection_activity"
+		android:layout_marginTop="5sp"
+		android:textColor="@android:color/white"
+		android:text="Label : "
+		android:textSize="20sp"
+		android:layout_alignParentLeft="true" />
+	<EditText
+		android:id="@+id/edittext_data_collection_label"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/textview_data_collection_activity"
+		android:layout_below="@id/spinner_data_collection_activity"
+		android:hint="Write Label..."
+		android:layout_alignParentRight="true" />
+	<LinearLayout
+		android:id="@+id/linearlayout_data_collection_start_stop"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/edittext_data_collection_label"
+		android:background="@drawable/background_start"
+		android:orientation="vertical"
+		android:gravity="center">
+		<TextView
+			android:id="@+id/textview_button_start_stop"
+			android:layout_width="wrap_content"
+			android:textSize="50sp"
+			android:text="Start"
+			android:textColor="@android:color/white"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:id="@+id/textview_button_start_stop_message"
+			android:layout_width="wrap_content"
+			android:textSize="20sp"
+			android:textColor="@android:color/white"
+			android:layout_height="wrap_content"
+			android:visibility="gone" />
+	</LinearLayout>
+</RelativeLayout>

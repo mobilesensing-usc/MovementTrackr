@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	<item
+		android:id="@+id/menu_select_profile"
+		android:title="@string/select_profile"
+		android:icon="@drawable/profile" />
+	<item
+		android:id="@+id/menu_view_data"
+		android:title="@string/view_data"
+		android:icon="@drawable/menu_graph" />
+	<item
+		android:id="@+id/menu_send_feedback"
+		android:title="@string/send_feedback"
+		android:icon="@drawable/send_feedback" />
+	<item
+		android:id="@+id/menu_settings"
+		android:title="@string/settings"
+		android:icon="@drawable/menu_settings" />
+	<item
+		android:id="@+id/menu_exit"
+		android:title="@string/exit"
+		android:icon="@drawable/menu_logout" />
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="@android:drawable/editbox_background">
+		<EditText
+			android:id="@+id/edittext_add_activity"
+			android:layout_width="fill_parent"
+			android:layout_height="30sp"
+			android:layout_toLeftOf="@+id/imagebutton_add_activity"
+			android:background="@android:color/transparent"
+			android:textColor="@android:color/black"
+			android:singleLine="true"
+			android:hint="Add Activity..." />
+		<ImageButton
+			android:id="@id/imagebutton_add_activity"
+			android:layout_width="30sp"
+			android:layout_height="30sp"
+			android:padding="5sp"
+			android:scaleType="fitXY"
+			android:layout_alignParentRight="true"
+			android:background="@android:color/transparent"
+			android:src="@drawable/add"/>
+	</RelativeLayout>
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+	<TextView
+		android:id="@android:id/empty"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:text="Type activity name in the text box and click on + button to create new activity..." />
+</LinearLayout>

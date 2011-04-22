@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="5sp"
+>
+	<Button
+		android:id="@+id/button_browse_delete"
+		android:layout_width="fill_parent"
+		android:layout_height="50sp"
+		android:layout_margin="5sp"
+		android:textStyle="bold"
+		android:textSize="20sp"
+		android:background="@drawable/button_delete"
+		android:textColor="@android:color/white"
+		android:text="Delete..."
+		android:layout_alignParentTop="true"
+		android:visibility="gone" />
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/button_browse_delete" />
+	<TextView
+		android:id="@android:id/empty"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:text="No files or folder found !"
+		/>
+</RelativeLayout>

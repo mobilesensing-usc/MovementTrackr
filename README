@@ -1,0 +1,30 @@
+This app records inertial data, viz. accelerometer (m/s^2), gyroscope (degrees/s) and GPS information (lat/long, when available) and stores data series in a .csv file. Additionally, data can be corrected for orientation of the phone and stored as well. To use the app, users have to create a profile and pick a particular activity type. One can also add new activities or labels to files. Users can also plot data time series and GPS plots from within the program. We are also working on help menu. The current release is an experimental version and works only on Android 2.3.1 or higher. We look forward to your comments and suggestions to improve the app.
+
+The current version 1.0 is already out there in the market and available to download for free. Please visit the following link:  https://market.android.com/details?id=com.resl.sensors&feature=search_result
+
+This application uses the following library to display sensor data : 
+
+/*
+ * achartengine - Charting library for Android 
+ *
+ * 		http://code.google.com/p/achartengine/
+ *
+ */
+
+Please see the copyright below
+
+/**
+ * Copyright (C) 2009, 2010 SC 4ViewSoft SRL
+ *  
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *  
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *  
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
