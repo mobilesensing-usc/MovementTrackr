@@ -10,3 +10,5 @@ OR
 1) 	Install git from: http://git-scm.com/
 2) 	Open git bash and use the command: git clone git@github.com:mobilesensing-usc/MovementTrackr.git
 3) 	Press enter. The source will be downloaded to your system.
+
+Make sure to include jar files after importing your project. They are inside the assets folder of the main directory.
